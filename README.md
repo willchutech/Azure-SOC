@@ -84,7 +84,7 @@ Stop Time 9/5/2023 10:02:20
 ![Screenshot (1)](https://github.com/willchutech/Azure-SOC/assets/144466318/d8b28d40-5840-41d0-8886-68775994912d)
 
 
-## Attack Maps Before Hardening / Security Controls
+## Attack Maps After Hardening / Security Controls
 
 ![(After)-windows-rdp-smb-auth-fail-24h](https://github.com/willchutech/Azure-SOC/assets/144466318/6dce9e56-d3cd-4aa5-9531-ad50877ec672)
 ```All map queries actually returned no results due to no instances of malicious activity for the 24 hour period after hardening.```
@@ -110,6 +110,6 @@ Stop Time	9/8/2023 1:03:41
 
 ## Conclusion
 
-In this project, a mini honeynet was constructed in Microsoft Azure and log sources were integrated into a Log Analytics workspace. Microsoft Sentinel was employed to trigger alerts and create incidents based on the ingested logs. Additionally, metrics were measured in the insecure environment before security controls were applied, and then again after implementing security measures. It is noteworthy that the number of security events and incidents were drastically reduced after the security controls were applied, demonstrating their effectiveness.
+In this project, I created a compact yet highly efficient honeynet in Microsoft Azure and seamlessly integrated various log sources into a Log Analytics workspace. I meticulously configured Microsoft Sentinel to promptly generate alerts and incident reports based on the log data. Furthermore, I conducted a comprehensive analysis of security metrics in the unprotected environment, both before and after the implementation of rigorous security measures.
 
-It is worth noting that if the resources within the network were heavily utilized by regular users, it is likely that more security events and alerts may have been generated within the 24-hour period following the implementation of the security controls.
+Notably, following the introduction of these enhanced security controls, there was a remarkable improvement in the security landscape. Specifically, there was a 96% reduction in Windows Security Events, a staggering 99% decrease in Linux Events, and a complete elimination of security alerts, incidents, and malicious inbound network traffic, marking a 100% reduction in these concerning security issues.
